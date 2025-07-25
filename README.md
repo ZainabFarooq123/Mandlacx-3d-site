@@ -1,38 +1,94 @@
-# R3F Vite Starter
+# MandlacX 3D Landing Page
 
-A starter template for [R3F](https://docs.pmnd.rs/react-three-fiber/) with [Vite](https://vitejs.dev/).
+This is a 3D promotional landing page built with **React Three Fiber**, showcasing the MandlacX Edge Processor. The design includes smooth model animations, dark theme styling, and modern web technologies.
 
-## Features
+---
 
-- [x] TailwindCSS
-- [x] `@react-three/fiber`
-- [x] `@react-three/drei`
-- [x] `@react-three/postprocessing`
-- [x] `@react-three/flex`
-- [x] `@react-spring/web`
-- [x] `@react-spring/three`
-- [x] `zustand`
+## 🌟 Features
 
-## Installation
+- 🖼️ 3D `.glb` Model Viewer with lighting and rotation  
+- 🌐 Dark Mode Layout using TailwindCSS  
+- 🎮 Interactive OrbitControls  
+- 🌊 Smooth Floating Animation  
+- ⚡ Built with Vite + React for fast development  
 
-First, clone the repository:
+---
 
+## 🚀 Getting Started
+
+### 1. Clone the Repository
 ```bash
-npx degit markshenouda/r3f-vite-starter my-project
+git clone https://github.com/your-username/mandlacx-3d-site.git
+cd mandlacx-3d-site
 ```
 
-Then, install the dependencies and run the development server:
-
+### 2. Install Dependencies
 ```bash
-yarn && yarn dev
+npm install
 ```
 
-## Contributing
+### 3. Run the Development Server
+```bash
+npm run dev
+```
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Visit: [http://localhost:5173](http://localhost:5173)
 
-Please make sure to update tests/dependencies as appropriate.
+---
 
-## License
+## 🧩 Project Structure
+```
+mandlacx-3d-site/
+│
+├── public/
+│   └── SmartSight Product Model.glb      # The 3D model file
+│
+├── src/
+│   ├── components/
+│   │   ├── FloatingModel.jsx             # Handles 3D model rotation and animation
+│   │   └── ModelCanvas.jsx               # Canvas with lighting and environment
+│   ├── App.jsx                           # Main app entry
+│   └── main.jsx                          # Vite entry point
+│
+├── .gitignore
+├── tailwind.config.js
+├── README.md
+└── package.json
+```
 
-[MIT](https://choosealicense.com/licenses/mit/)
+---
+
+## 🛠️ Tech Stack
+
+- **React** (with Vite)  
+- **React Three Fiber** for 3D rendering  
+- **Drei** for helpers like `OrbitControls` and `Environment`  
+- **TailwindCSS** for styling  
+- **GLTFLoader** (from drei) for loading `.glb` models  
+
+---
+
+## 📄 .gitignore Example
+```gitignore
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Environment files
+.env
+
+# IDE and system files
+.vscode/*
+.DS_Store
+.idea/
+```
